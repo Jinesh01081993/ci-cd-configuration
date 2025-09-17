@@ -1,3 +1,5 @@
+# Create directory and requirements.txt, then install
+mkdir -p /home/ubuntu/blogprojectdrf/ && cat > /home/ubuntu/blogprojectdrf/requirements.txt << 'EOF'
 asgiref==3.8.1
 certifi==2024.8.30
 charset-normalizer==3.4.0
@@ -29,3 +31,7 @@ ruamel.yaml.clib==0.2.8
 uritemplate==4.1.1
 urllib3==2.2.3
 whitenoise==6.7.0
+EOF
+
+# Install the packages
+pip install -r /home/ubuntu/blogprojectdrf/requirements.txt
